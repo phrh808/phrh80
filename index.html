@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information and Leave Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .questionnaire, .leave-request {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .field label {
+            width: 200px;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .field input,
+        .field select {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .field textarea {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .submit-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .submit-button input {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button input:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .comment {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="questionnaire">
+        <form action="mailto:memetoo707@gmail.com" method="post" enctype="text/plain">
+            <div class="section">
+                <h2>Rate of Waiting Time Form in Main Pharmacy Royal Hospital</h2>
+            </div>
+
+            <div class="leave-request">
+                <h2>Annual Leave Request</h2>
+                <table>
+                    <tr>
+                        <th>Staff Name</th>
+                        <td><input type="text" name="staff_name"></td>
+                    </tr>
+                    <tr>
+                        <th>Staff Number</th>
+                        <td><input type="text" name="staff_number"></td>
+                    </tr>
+                </table>
+                
+                <h3>Leave Periods</h3>
+                <table>
+                    <tr>
+                        <th>Start Leave</th>
+                        <td><input type="date" name="start_leave_1"></td>
+                        <th>End Leave</th>
+                        <td><input type="date" name="end_leave_1"></td>
+                    </tr>
+                    <tr>
+                        <th>Start Leave</th>
+                        <td><input type="date" name="start_leave_2"></td>
+                        <th>End Leave</th>
+                        <td><input type="date" name="end_leave_2"></td>
+                    </tr>
+                    <tr>
+                        <th>Start Leave</th>
+                        <td><input type="date" name="start_leave_3"></td>
+                        <th>End Leave</th>
+                        <td><input type="date" name="end_leave_3"></td>
+                    </tr>
+                    <tr>
+                        <th>Start Leave</th>
+                        <td><input type="date" name="start_leave_4"></td>
+                        <th>End Leave</th>
+                        <td><input type="date" name="end_leave_4"></td>
+                    </tr>
+                </table>
+                
+                <div class="comment">
+                    <h3>Comment:</h3>
+                    <textarea name="comment" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
